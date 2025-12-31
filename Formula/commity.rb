@@ -5,21 +5,21 @@
 class Commity < Formula
   desc "AI-powered git commit message generator with TUI"
   homepage "https://github.com/hluaguo/commity"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hluaguo/commity/releases/download/v0.1.3/commity_0.1.3_darwin_amd64.tar.gz"
-      sha256 "1711683ebc81d805e9562dc2d47b9c990825cc9d540d5808e3f59b3aef5d4725"
+      url "https://github.com/hluaguo/commity/releases/download/v0.1.4/commity_0.1.4_darwin_amd64.tar.gz"
+      sha256 "7bd219bd84c1a288e3fd3ca853ef62218dd6ba6afaa11768a0c6282a08883090"
 
       def install
         bin.install "commity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hluaguo/commity/releases/download/v0.1.3/commity_0.1.3_darwin_arm64.tar.gz"
-      sha256 "4bae9932983f9be47de6552ad971c123cff6530ad44a7dadb27ba88793d078d1"
+      url "https://github.com/hluaguo/commity/releases/download/v0.1.4/commity_0.1.4_darwin_arm64.tar.gz"
+      sha256 "7fa75f48a457ea9bd165b85e9f6c5da3d924ceb9517f8f0c9b54b33a887c562b"
 
       def install
         bin.install "commity"
@@ -29,15 +29,15 @@ class Commity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hluaguo/commity/releases/download/v0.1.3/commity_0.1.3_linux_amd64.tar.gz"
-      sha256 "75ed7051345cb6353a5a199c2722d4ea9f965ee81192bcccb70208f1bd63740d"
+      url "https://github.com/hluaguo/commity/releases/download/v0.1.4/commity_0.1.4_linux_amd64.tar.gz"
+      sha256 "f720a133e75da8d450f637c0d7321cf07dd9951139e73adb1f9d0d87692051f7"
       def install
         bin.install "commity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hluaguo/commity/releases/download/v0.1.3/commity_0.1.3_linux_arm64.tar.gz"
-      sha256 "c9c43603ac20f857d5038513a9b2e7f18436629afad41a533c907046d5fee85c"
+      url "https://github.com/hluaguo/commity/releases/download/v0.1.4/commity_0.1.4_linux_arm64.tar.gz"
+      sha256 "05f7f93459511cac77ece8c2fc822cb10bdc4cde5f6ddc60ad26e3a49d3d7c47"
       def install
         bin.install "commity"
       end
